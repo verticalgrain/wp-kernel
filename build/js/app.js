@@ -1,0 +1,1 @@
+var app={};app.template=function(o){"use strict";console.log("This is a test to confirm javascript is working"),o(document).ready(function(){console.log("This is a test to confirm jquery is working")})}(jQuery);

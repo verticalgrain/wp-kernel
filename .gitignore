@@ -1,0 +1,11 @@
+*.DS_Store
+*.swp
+*._*
+*.gz
+*.mysql
+*.sql
+*.bz2
+*.zip
+*.tar
+.sass-cache/
+.node_modules/

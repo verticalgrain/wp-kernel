@@ -1,0 +1,28 @@
+// Fonts
+$font-sans: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+$font-serif: Georgia,serif;
+
+// Breakpoints
+$breakpoint-xxlarge: 1600px;
+$breakpoint-xlarge: 1400px;
+$breakpoint-large: 1200px;
+$breakpoint-medium: 1000px;
+$breakpoint-small: 800px;
+$breakpoint-xsmall: 600px;
+$breakpoint-xxsmall: 400px;
+
+// Vertical Spacing Units
+$space-unit: 15px;
+$space-unit-small: 8px;
+
+// Grid variables
+$gutter-body: 20px;
+$gutter-column: 20px;
+$column-count: 12;
+
+// Colors
+$color-orange: #E45A3D;
+
+// Image and font paths for functions in includes/_functions.scss
+$path-images: '../../images';
+$path-fonts: '../../fonts';
