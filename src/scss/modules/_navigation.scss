@@ -1,0 +1,19 @@
+.navigation {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: scroll;
+    left: -100vw;
+    top: 0 !important;
+    transition-duration: $duration-fast;
+    background: fuchsia;
+    padding: 100px 60px 20px;
+    &__item {
+        color: $color-white;
+    }
+    .is-nav-toggled & {
+      left: 0;
+    }
+}

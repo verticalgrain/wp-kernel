@@ -22,7 +22,19 @@ $column-count: 12;
 
 // Colors
 $color-orange: #E45A3D;
+$color-black: #000000;
+$color-white: #f2f2f2;
+
+$duration-fast: 0.15s;
+$duration-default: 0.5s;
 
 // Image and font paths for functions in includes/_functions.scss
 $path-images: '../../images';
 $path-fonts: '../../fonts';
+
+// Layout and Grid
+$l-container-width: $breakpoint-xlarge;
+$l-gutter-body: 0;
+$l-gutter-column: 0;
+$l-column-count: 12;
+$l-col-width: 100% / $l-column-count;

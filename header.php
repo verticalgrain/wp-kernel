@@ -22,8 +22,6 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
-  <!-- <script src="build/js/vendor/modernizr-custom.js"></script> -->
-
   <?php wp_head(); ?>
   
 </head>
@@ -33,4 +31,20 @@
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
 
-  <?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'container_class' => 'menu' ) ); ?>
+  <div class="overlay overlay--loading" style="position: fixed;width: 100vw;height: 100vh;background: white;z-index: 99;">
+    <div style="width:100px;height:100px;position:absolute;left:50%;top:50%;margin-left:-50px;margin-top:-50px;">
+      Loading...
+    </div>
+  </div><!-- .overlay -->
+
+  <div class="navigation">
+    <a class="navigation__item j-navigation-toggle" href="#">Nav Item</a>
+  </div>
+
+  <div class="hamburger j-navigation-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'container_class' => '', 'items_wrap' => '<ul>%3$s</ul>' ) ); ?>

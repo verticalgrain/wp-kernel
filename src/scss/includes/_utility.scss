@@ -7,3 +7,13 @@
   padding: 0;
   list-style-type: none;
 }
+
+.is-invisible {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.is-hidden {
+  display: none;
+  pointer-events: none;
+}

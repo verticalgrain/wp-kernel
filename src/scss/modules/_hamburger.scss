@@ -1,0 +1,55 @@
+.hamburger {
+  width: 20px;
+  height: 16px;
+  z-index: 99;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  &:hover {
+    cursor: pointer;
+  } 
+  @media (max-width: $breakpoint-small) {
+    display: block;
+  }
+  span {
+    width: 20px;
+    height: 2px;
+    position: absolute;
+    transform-origin: 0;
+    background: $color-black;
+    transition-duration: $duration-fast;
+    &:nth-of-type(1) {
+      top: 0;
+      left: 0px;
+    }
+    &:nth-of-type(2) {
+      top: 7px;
+      opacity: 1;
+    }
+    &:last-of-type {
+      bottom: 0;
+      left: 0;
+    }
+  }
+  .is-nav-toggled & {
+    span {
+      background: white;
+      &:nth-of-type(1) {
+        transform: rotate(45deg)
+      }
+      &:nth-of-type(2) {
+        opacity: 0;
+      }
+      &:last-of-type {
+        transform: rotate(-45deg)
+      }
+    }
+  } 
+}
+
+// Lock scrolling when the nav is open
+body {
+  &.is-nav-toggled {
+    overflow: hidden !important;
+  }
+}
