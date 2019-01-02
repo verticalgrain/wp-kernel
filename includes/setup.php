@@ -35,11 +35,5 @@ function enqueue_scripts() {
 add_action( 'wp_enqueue_scripts', 'enqueue_scripts' );
 
 
-
-
-
-
-
-
-
-
+// Add theme support for post thumbnails
+add_theme_support( 'post-thumbnails' );

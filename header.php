@@ -1,15 +1,7 @@
 <!doctype html>
 <html lang="">
 <head>
-  <!--
-       _               _           
-      | |             (_)          
-    __| | ___  ___ ___ _  ___ _ __ 
-   / _` |/ _ \/ __/ __| |/ _ \ '__|
-  | (_| | (_) \__ \__ \ |  __/ |   
-   \__,_|\___/|___/___/_|\___|_|   
-                                   
-  -->
+
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
